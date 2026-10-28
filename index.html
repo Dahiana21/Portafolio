@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Portafolio de Dahiana Diez Toro. Proyectos, formación e intereses en desarrollo de software, frontend, DevOps y computación en la nube.">
+
+    <title>Dahiana Dev | Portafolio</title>
+
+    <!-- TIPOGRAFÍAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- TAILWIND CSS VERSIÓN 3 -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+
+    <!-- CONFIGURACIÓN DE COLORES Y FUENTES -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fondo-oscuro': '#17152E',
+                        'morado': '#7555E8',
+                        'lavanda': '#E9E2FF',
+                        'fondo-claro': '#F8F7FF',
+                        'texto': '#44415B',
+                        'morado-claro': '#C5B5FF'
+                    },
+                    fontFamily: {
+                        titulos: ['Montserrat', 'sans-serif'],
+                        texto: ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+
+</head>
+
+<body class="m-0 bg-fondo-claro font-texto leading-relaxed text-fondo-oscuro">
+
+    <!-- ACCESIBILIDAD -->
+    <a
+        href="#contenido-principal"
+        class="sr-only focus:not-sr-only focus:fixed
+               focus:left-4 focus:top-4 focus:z-50
+               focus:rounded-lg focus:bg-white
+               focus:p-4 focus:text-fondo-oscuro"
+    >
+        Saltar al contenido principal
+    </a>
+
+    <!-- ENCABEZADO -->
+    <header class="bg-fondo-oscuro">
+
+        <nav
+            class="mx-auto flex max-w-7xl flex-wrap
+                   items-center justify-between gap-5
+                   px-6 py-6"
+            aria-label="Navegación principal"
+        >
+
+            <a
+                href="#inicio"
+                class="font-titulos text-2xl font-bold
+                       text-white hover:text-lavanda"
+            >
+                Dahiana<span class="text-morado-claro">Dev.</span>
+            </a>
+
+            <ul
+                class="flex flex-wrap gap-x-5 gap-y-3
+                       text-sm font-semibold text-white"
+            >
+                <li>
+                    <a href="#inicio"
+                       class="hover:text-morado-claro focus-visible:underline">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#sobre-mi"
+                       class="hover:text-morado-claro focus-visible:underline">
+                        Sobre mí
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#habilidades"
+                       class="hover:text-morado-claro focus-visible:underline">
+                        Habilidades
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#proyectos"
+                       class="hover:text-morado-claro focus-visible:underline">
+                        Proyectos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#formacion"
+                       class="hover:text-morado-claro focus-visible:underline">
+                        Formación
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contacto"
+                       class="hover:text-morado-claro focus-visible:underline">
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="contenido-principal" class="mx-auto max-w-7xl">
+
+    
+        <section
+            id="inicio"
+            class="grid min-h-[70vh] grid-cols-1
+                   items-center gap-10 rounded-b-3xl
+                   bg-fondo-oscuro px-6 py-12
+                   text-white md:grid-cols-2
+                   md:px-12 md:py-16"
+        >
+
+            <div class="text-center md:text-left">
+
+                <p
+                    class="mb-4 font-semibold uppercase
+                           tracking-widest text-morado-claro"
+                >
+                    HOLA, SOY DAHIANA
+                </p>
+
+                <h1
+                    class="mb-3 font-titulos text-4xl
+                           font-bold sm:text-5xl"
+                >
+                    Dahiana Diez Toro
+                </h1>
+
+                <h2
+                    class="mb-5 font-titulos text-2xl
+                           font-semibold text-lavanda"
+                >
+                    Desarrolladora de software
+                </h2>
+
+                <p
+                    class="mx-auto mb-7 max-w-xl
+                           leading-8 text-gray-200 md:mx-0"
+                >
+                    Apasionada por la tecnología, el aprendizaje
+                    constante y la creación de soluciones digitales
+                    que generen un impacto positivo en las personas.
+                </p>
+
+                <div
+                    class="flex flex-wrap justify-center
+                           gap-4 md:justify-start"
+                >
+
+                    <a
+                        href="#proyectos"
+                        class="inline-block rounded-xl
+                               bg-morado px-6 py-3
+                               font-semibold text-white
+                               transition duration-200
+                               hover:bg-violet-700
+                               focus-visible:outline
+                               focus-visible:outline-2
+                               focus-visible:outline-offset-4
+                               focus-visible:outline-morado-claro"
+                    >
+                        Ver mis proyectos
+                    </a>
+
+                    <a
+                        href="#contacto"
+                        class="inline-block rounded-xl
+                               bg-lavanda px-6 py-3
+                               font-semibold text-fondo-oscuro
+                               transition duration-200
+                               hover:bg-white
+                               focus-visible:outline
+                               focus-visible:outline-2
+                               focus-visible:outline-offset-4
+                               focus-visible:outline-morado-claro"
+                    >
+                        Contactarme
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- FOTOGRAFÍA -->
+            <div class="flex justify-center">
+
+                <img
+                    src="img/perfil.png"
+                    alt="Retrato de Dahiana"
+                    class="w-full max-w-sm rounded-3xl
+                           object-cover shadow-2xl
+                           shadow-violet-900/40"
+                >
+
+            </div>
+
+        </section>
+
+        
+        <section
+            id="sobre-mi"
+            class="px-6 py-16 md:px-12"
+        >
+
+            <h2
+                class="mb-10 text-center font-titulos
+                       text-3xl font-bold"
+            >
+                Sobre mí
+            </h2>
+
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+
+                
+                <article
+                    class="rounded-2xl border border-violet-200
+                           bg-white p-8 shadow-sm"
+                >
+
+                    <h3
+                        class="mb-5 font-titulos text-xl
+                               font-bold text-violet-700"
+                    >
+                        Conóceme
+                    </h3>
+
+                    <p class="mb-4 leading-8 text-texto">
+                        Soy estudiante de Ingeniería de Software,
+                        apasionada por la tecnología y el desarrollo
+                        de soluciones digitales. Me interesa
+                        especialmente el desarrollo frontend,
+                        tanto para páginas web como para
+                        aplicaciones móviles.
+                    </p>
+
+                    <p class="mb-4 leading-8 text-texto">
+                        También me llama mucho la atención el
+                        mundo de DevOps y la computación en la nube.
+                        Quiero comprender cómo funcionan las
+                        infraestructuras tecnológicas, cómo se
+                        despliegan las aplicaciones y cómo las
+                        diferentes herramientas permiten crear
+                        soluciones más eficientes.
+                    </p>
+
+                    <p class="mb-4 leading-8 text-texto">
+                        Me considero una persona responsable,
+                        disciplinada y comprometida con cada
+                        actividad que realizo. Me esfuerzo por
+                        aprender constantemente, superar nuevos
+                        retos y fortalecer mis habilidades
+                        personales y profesionales.
+                    </p>
+
+                    <p class="leading-8 text-texto">
+                        Disfruto trabajar en equipo, compartir
+                        conocimientos y buscar alternativas
+                        para resolver problemas. Mi propósito
+                        es continuar creciendo como desarrolladora
+                        y aportar valor a los proyectos
+                        en los que participe.
+                    </p>
+
+                </article>
+
+                
+                <div class="flex flex-col gap-4">
+
+                    <!-- FORMACIÓN -->
+                    <article
+                        class="flex-1 rounded-2xl border
+                               border-violet-200 bg-white
+                               p-6 shadow-sm"
+                    >
+
+                        <h3
+                            class="mb-2 font-titulos text-lg
+                                   font-bold text-violet-700"
+                        >
+                            Mi formación
+                        </h3>
+
+                        <p class="leading-7 text-texto">
+                            Ingeniería de Software,
+                            Tecnología en Gestión Informática
+                            y formación práctica en desarrollo
+                            de software.
+                        </p>
+
+                    </article>
+
+                    
+                    <article
+                        class="flex-1 rounded-2xl border
+                               border-violet-200 bg-white
+                               p-6 shadow-sm"
+                    >
+
+                        <h3
+                            class="mb-3 font-titulos text-lg
+                                   font-bold text-violet-700"
+                        >
+                            Mis intereses
+                        </h3>
+
+                        <ul class="list-disc space-y-2 pl-5 text-texto">
+                            <li>Desarrollo frontend.</li>
+                            <li>Desarrollo web y móvil.</li>
+                            <li>DevOps.</li>
+                            <li>Computación en la nube.</li>
+                            <li>Aprendizaje de nuevas tecnologías.</li>
+                        </ul>
+
+                    </article>
+
+                    
+                    <article
+                        class="flex-1 rounded-2xl border
+                               border-violet-200 bg-white
+                               p-6 shadow-sm"
+                    >
+
+                        <h3
+                            class="mb-2 font-titulos text-lg
+                                   font-bold text-violet-700"
+                        >
+                            Mi objetivo
+                        </h3>
+
+                        <p class="leading-7 text-texto">
+                            Aplicar y fortalecer mis conocimientos
+                            para crear soluciones tecnológicas
+                            útiles e innovadoras que permitan
+                            simplificar tareas, resolver problemas
+                            y facilitar la vida de las personas.
+                            Quiero aportar al desarrollo de
+                            herramientas que generen un impacto
+                            positivo en la sociedad.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        
+        <section
+            id="habilidades"
+            class="px-6 py-16 md:px-12"
+        >
+
+            <h2
+                class="mb-4 text-center font-titulos
+                       text-3xl font-bold"
+            >
+                Mis habilidades
+            </h2>
+
+            <p
+                class="mx-auto mb-10 max-w-2xl
+                       text-center text-texto"
+            >
+                Estos son algunos de mis conocimientos
+                y habilidades, así como las tecnologías
+                en las que quiero seguir creciendo.
+            </p>
+
+            <!-- HABILIDADES ACTUALES -->
+            <section aria-labelledby="habilidades-actuales">
+
+                <h3
+                    id="habilidades-actuales"
+                    class="mb-6 font-titulos text-2xl
+                           font-bold text-violet-700"
+                >
+                    Conocimientos y habilidades actuales
+                </h3>
+
+                <div
+                    class="grid grid-cols-1 gap-5
+                           sm:grid-cols-2 lg:grid-cols-3"
+                >
+
+                    <!-- LIDERAZGO -->
+                    <article
+                        class="rounded-2xl border border-violet-200
+                               bg-white p-8 text-center shadow-sm
+                               transition duration-200
+                               hover:-translate-y-1 hover:shadow-xl
+                               motion-reduce:transform-none
+                               motion-reduce:transition-none"
+                    >
+
+                        <span
+                            aria-hidden="true"
+                            class="mx-auto mb-5 flex h-16 w-16
+                                   items-center justify-center
+                                   rounded-2xl bg-lavanda text-3xl"
+                        >
+                            🤝
+                        </span>
+
+                        <h4
+                            class="mb-3 font-titulos text-xl
+                                   font-bold text-violet-700"
+                        >
+                            Liderazgo
+                        </h4>
+
+                        <p class="text-texto">
+                            Responsabilidad, trabajo en equipo,
+                            compromiso y colaboración para
+                            alcanzar objetivos comunes.
+                        </p>
+
+                    </article>
+
+                    <!-- BASES DE DATOS -->
+                    <article
+                        class="rounded-2xl border border-violet-200
+                               bg-white p-8 text-center shadow-sm
+                               transition duration-200
+                               hover:-translate-y-1 hover:shadow-xl
+                               motion-reduce:transform-none
+                               motion-reduce:transition-none"
+                    >
+
+                        <span
+                            aria-hidden="true"
+                            class="mx-auto mb-5 flex h-16 w-16
+                                   items-center justify-center
+                                   rounded-2xl bg-lavanda
+                                   font-titulos text-xl font-bold
+                                   text-violet-700"
+                        >
+                            DB
+                        </span>
+
+                        <h4
+                            class="mb-3 font-titulos text-xl
+                                   font-bold text-violet-700"
+                        >
+                            Bases de datos
+                        </h4>
+
+                        <p class="text-texto">
+                            Conocimientos en organización,
+                            almacenamiento y consulta
+                            de información.
+                        </p>
+
+                    </article>
+
+                    <!-- PYTHON -->
+                    <article
+                        class="rounded-2xl border border-violet-200
+                               bg-white p-8 text-center shadow-sm
+                               transition duration-200
+                               hover:-translate-y-1 hover:shadow-xl
+                               motion-reduce:transform-none
+                               motion-reduce:transition-none"
+                    >
+
+                        <span
+                            aria-hidden="true"
+                            class="mx-auto mb-5 flex h-16 w-16
+                                   items-center justify-center
+                                   rounded-2xl bg-lavanda
+                                   font-titulos text-xl font-bold
+                                   text-violet-700"
+                        >
+                            Py
+                        </span>
+
+                        <h4
+                            class="mb-3 font-titulos text-xl
+                                   font-bold text-violet-700"
+                        >
+                            Python
+                        </h4>
+
+                        <p class="text-texto">
+                            Fundamentos de programación,
+                            lógica y resolución de problemas.
+                        </p>
+
+                    </article>
+
+                    <!-- GIT Y GITHUB -->
+                    <article
+                        class="rounded-2xl border border-violet-200
+                               bg-white p-8 text-center shadow-sm
+                               transition duration-200
+                               hover:-translate-y-1 hover:shadow-xl
+                               motion-reduce:transform-none
+                               motion-reduce:transition-none"
+                    >
+
+                        <span
+                            aria-hidden="true"
+                            class="mx-auto mb-5 flex h-16 w-16
+                                   items-center justify-center
+                                   rounded-2xl bg-lavanda
+                                   font-titulos text-lg font-bold
+                                   text-violet-700"
+                        >
+                            Git
+                        </span>
+
+                        <h4
+                            class="mb-3 font-titulos text-xl
+                                   font-bold text-violet-700"
+                        >
+                            Git y GitHub
+                        </h4>
+
+                        <p class="text-texto">
+                            Control de versiones,
+                            creación de repositorios
+                            y seguimiento de cambios
+                            en proyectos.
+                        </p>
+
+                    </article>
+
+                    <!-- HTML Y CSS -->
+                    <article
+                        class="rounded-2xl border border-violet-200
+                               bg-white p-8 text-center shadow-sm
+                               transition duration-200
+                               hover:-translate-y-1 hover:shadow-xl
+                               motion-reduce:transform-none
+                               motion-reduce:transition-none"
+                    >
+
+                        <span
+                            aria-hidden="true"
+                            class="mx-auto mb-5 flex h-16 w-16
+                                   items-center justify-center
+                                   rounded-2xl bg-lavanda
+                                   font-titulos text-xl font-bold
+                                   text-violet-700"
+                        >
+                            &lt;/&gt;
+                        </span>
+
+                        <h4
+                            class="mb-3 font-titulos text-xl
+                                   font-bold text-violet-700"
+                        >
+                            HTML y CSS
+                        </h4>
+
+                        <p class="text-texto">
+                            Conocimientos en estructura,
+                            semántica y estilos básicos
+                            para páginas web.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- HABILIDADES QUE QUIERO FORTALECER -->
+            <section
+                class="mt-14"
+                aria-labelledby="habilidades-futuras"
+            >
+
+                <h3
+                    id="habilidades-futuras"
+                    class="mb-3 font-titulos text-2xl
+                           font-bold text-violet-700"
+                >
+                    Tecnologías que quiero fortalecer
+                </h3>
+
+                <p class="mb-6 text-texto">
+                    Son herramientas y áreas tecnológicas
+                    en las que quiero profundizar para
+                    ampliar mis conocimientos y crecer
+                    profesionalmente.
+                </p>
+
+                <div
+                    class="grid grid-cols-1 gap-5
+                           sm:grid-cols-2 lg:grid-cols-3"
+                >
+
+                    <!-- JAVASCRIPT -->
+                    <article
+                        class="rounded-2xl border
+                               border-violet-200 bg-white
+                               p-8 text-center shadow-sm
+                               transition duration-200
+                               hover:-translate-y-1 hover:shadow-xl
+                               motion-reduce:transform-none
+                               motion-reduce:transition-none"
+                    >
+
+                        <span
+                            aria-hidden="true"
+                            class="mx-auto mb-5 flex h-16 w-16
+                                   items-center justify-center
+                                   rounded-2xl bg-violet-100
+                                   font-titulos text-xl font-bold
+                                   text-violet-700"
+                        >
+                            JS
+                        </span>
+
+                        <h4
+                            class="mb-3 font-titulos text-xl
+                                   font-bold text-violet-700"
+                        >
+                            JavaScript
+                        </h4>
+
+                        <p class="text-texto">
+                            Profundizar en la programación
+                            y la interactividad de
+                            aplicaciones web.
+                        </p>
+
+                    </article>
+
+                    <!-- REACT NATIVE -->
+                    <article
+                        class="rounded-2xl border
+                               border-violet-200 bg-white
+                               p-8 text-center shadow-sm
+                               transition duration-200
+                               hover:-translate-y-1 hover:shadow-xl
+                               motion-reduce:transform-none
+                               motion-reduce:transition-none"
+                    >
+
+                        <span
+                            aria-hidden="true"
+                            class="mx-auto mb-5 flex h-16 w-16
+                                   items-center justify-center
+                                   rounded-2xl bg-violet-100
+                                   text-3xl"
+                        >
+                            📱
+                        </span>
+
+                        <h4
+                            class="mb-3 font-titulos text-xl
+                                   font-bold text-violet-700"
+                        >
+                            React Native
+                        </h4>
+
+                        <p class="text-texto">
+                            Seguir fortaleciendo mis
+                            conocimientos para crear
+                            aplicaciones móviles.
+                        </p>
+
+                    </article>
+
+                    <!-- TYPESCRIPT -->
+                    <article
+                        class="rounded-2xl border
+                               border-violet-200 bg-white
+                               p-8 text-center shadow-sm
+                               transition duration-200
+                               hover:-translate-y-1 hover:shadow-xl
+                               motion-reduce:transform-none
+                               motion-reduce:transition-none"
+                    >
+
+                        <span
+                            aria-hidden="true"
+                            class="mx-auto mb-5 flex h-16 w-16
+                                   items-center justify-center
+                                   rounded-2xl bg-violet-100
+                                   font-titulos text-xl font-bold
+                                   text-violet-700"
+                        >
+                            TS
+                        </span>
+
+                        <h4
+                            class="mb-3 font-titulos text-xl
+                                   font-bold text-violet-700"
+                        >
+                            TypeScript
+                        </h4>
+
+                        <p class="text-texto">
+                            Mejorar mis habilidades para
+                            desarrollar aplicaciones
+                            con código más organizado.
+                        </p>
+
+                    </article>
+
+                    <!-- COMPUTACIÓN EN LA NUBE -->
+                    <article
+                        class="rounded-2xl border
+                               border-violet-200 bg-white
+                               p-8 text-center shadow-sm
+                               transition duration-200
+                               hover:-translate-y-1 hover:shadow-xl
+                               motion-reduce:transform-none
+                               motion-reduce:transition-none"
+                    >
+
+                        <span
+                            aria-hidden="true"
+                            class="mx-auto mb-5 flex h-16 w-16
+                                   items-center justify-center
+                                   rounded-2xl bg-violet-100
+                                   text-3xl"
+                        >
+                            ☁️
+                        </span>
+
+                        <h4
+                            class="mb-3 font-titulos text-xl
+                                   font-bold text-violet-700"
+                        >
+                            Computación en la nube
+                        </h4>
+
+                        <p class="text-texto">
+                            Aprender sobre servicios cloud,
+                            infraestructura, almacenamiento,
+                            despliegue de aplicaciones y
+                            funcionamiento de plataformas
+                            en la nube.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <!-- PROYECTOS -->
+        <section
+            id="proyectos"
+            class="px-6 py-16 md:px-12"
+        >
+
+            <h2
+                class="mb-4 text-center font-titulos
+                       text-3xl font-bold"
+            >
+                Mis proyectos
+            </h2>
+
+            <p
+                class="mx-auto mb-10 max-w-2xl
+                       text-center text-texto"
+            >
+                Estos son algunos de los proyectos
+                en los que he trabajado, aplicando
+                mis conocimientos y aprendiendo
+                nuevas tecnologías.
+            </p>
+
+            <div
+                class="grid grid-cols-1 gap-8
+                       md:grid-cols-2 lg:grid-cols-3"
+            >
+
+                <!-- PROYECTO 1: RUEDA LIBRE -->
+                <article
+                    class="flex flex-col overflow-hidden
+                           rounded-2xl border border-violet-200
+                           bg-white shadow-md
+                           transition duration-300
+                           hover:-translate-y-2 hover:shadow-xl
+                           motion-reduce:transform-none
+                           motion-reduce:transition-none"
+                >
+
+                    <!-- LOGO -->
+                    <div
+                        class="flex h-56 items-center
+                               justify-center bg-gradient-to-br
+                               from-emerald-100 to-emerald-50
+                               p-7"
+                    >
+
+                        <img
+                            src="img/logo.JPEG"
+                            alt="Logotipo de Rueda Libre"
+                            loading="lazy"
+                            class="h-40 w-full object-contain"
+                        >
+
+                    </div>
+
+                    <div class="flex flex-1 flex-col p-7">
+
+                        <h3
+                            class="mb-3 font-titulos text-xl
+                                   font-bold text-violet-700"
+                        >
+                            Rueda Libre
+                        </h3>
+
+                        <p class="mb-5 leading-7 text-texto">
+                            Sitio web para el alquiler
+                            de bicicletas y recorridos
+                            guiados en Medellín. Incluye
+                            información de servicios,
+                            tarifas y un formulario
+                            de reservas.
+                        </p>
+
+                        <ul
+                            class="mb-6 flex flex-wrap gap-2"
+                            aria-label="Tecnologías de Rueda Libre"
+                        >
+
+                            <li class="rounded-full bg-lavanda
+                                       px-3 py-1 text-sm
+                                       font-semibold text-violet-800">
+                                HTML
+                            </li>
+
+                            <li class="rounded-full bg-lavanda
+                                       px-3 py-1 text-sm
+                                       font-semibold text-violet-800">
+                                CSS
+                            </li>
+
+                            <li class="rounded-full bg-lavanda
+                                       px-3 py-1 text-sm
+                                       font-semibold text-violet-800">
+                                GitHub Pages
+                            </li>
+
+                        </ul>
+
+                        <div class="mt-auto flex flex-wrap gap-3">
+
+                            <a
+                                href="https://dahiana21.github.io/rueda-libre/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-block rounded-lg
+                                       bg-morado px-5 py-3
+                                       font-semibold text-white
+                                       hover:bg-violet-700
+                                       focus-visible:outline
+                                       focus-visible:outline-2
+                                       focus-visible:outline-offset-2"
+                            >
+                                Ver proyecto
+                            </a>
+
+                            <a
+                                href="https://github.com/Dahiana21/rueda-libre"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-block rounded-lg
+                                       border border-violet-300
+                                       px-5 py-3 font-semibold
+                                       text-violet-800
+                                       hover:bg-lavanda
+                                       focus-visible:outline
+                                       focus-visible:outline-2
+                                       focus-visible:outline-offset-2"
+                            >
+                                Ver código
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- PROYECTO 2: VIVLINK -->
+                <article
+                    class="flex flex-col overflow-hidden
+                           rounded-2xl border border-violet-200
+                           bg-white shadow-md
+                           transition duration-300
+                           hover:-translate-y-2 hover:shadow-xl
+                           motion-reduce:transform-none
+                           motion-reduce:transition-none"
+                >
+
+                    <!-- LOGO -->
+                    <div
+                        class="flex h-56 items-center
+                               justify-center bg-gradient-to-br
+                               from-violet-100 to-lavanda
+                               p-7"
+                    >
+
+                        <img
+                            src="img/icon_android.png"
+                            alt="Logotipo de Vivlink"
+                            loading="lazy"
+                            class="h-40 w-full object-contain"
+                        >
+
+                    </div>
+
+                    <div class="flex flex-1 flex-col p-7">
+
+                        <h3
+                            class="mb-3 font-titulos text-xl
+                                   font-bold text-violet-700"
+                        >
+                            Vivlink
+                        </h3>
+
+                        <p class="mb-5 leading-7 text-texto">
+                            Aplicación móvil inmobiliaria
+                            para la publicación, gestión
+                            y búsqueda de propiedades.
+                            Incluye autenticación de
+                            usuarios y funcionalidades
+                            para gestionar solicitudes
+                            de visitas.
+                        </p>
+
+                        <ul
+                            class="mb-6 flex flex-wrap gap-2"
+                            aria-label="Tecnologías de Vivlink"
+                        >
+
+                            <li class="rounded-full bg-lavanda
+                                       px-3 py-1 text-sm
+                                       font-semibold text-violet-800">
+                                React Native
+                            </li>
+
+                            <li class="rounded-full bg-lavanda
+                                       px-3 py-1 text-sm
+                                       font-semibold text-violet-800">
+                                Expo
+                            </li>
+
+                            <li class="rounded-full bg-lavanda
+                                       px-3 py-1 text-sm
+                                       font-semibold text-violet-800">
+                                Firebase
+                            </li>
+
+                        </ul>
+
+                        <div class="mt-auto">
+
+                            <p
+                                class="inline-block rounded-lg
+                                       bg-emerald-100 px-5 py-3
+                                       font-semibold text-emerald-800"
+                            >
+                                Proyecto finalizado
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- PROYECTO 3: HOTEL JIREH -->
+                <article
+                    class="flex flex-col overflow-hidden
+                           rounded-2xl border border-violet-200
+                           bg-white shadow-md
+                           transition duration-300
+                           hover:-translate-y-2 hover:shadow-xl
+                           motion-reduce:transform-none
+                           motion-reduce:transition-none"
+                >
+
+                    <!-- PORTADA -->
+                    <div
+                        class="flex h-56 items-center
+                               justify-center bg-gradient-to-br
+                               from-indigo-900 via-violet-800
+                               to-morado p-6 text-center
+                               text-white"
+                    >
+
+                        <div>
+                            <img
+                            src="img/logoo.png"
+                            alt="Logotipo de Hotel Jireh"
+                            loading="lazy"
+                            class="h-40 w-full object-contain"
+                        >
+
+                            <p
+                                class="font-titulos text-3xl
+                                       font-bold"
+                            >
+                                Hotel Jirah
+                            </p>
+
+                            <p class="mt-2 text-sm text-lavanda">
+                                Sistema de reservas
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="flex flex-1 flex-col p-7">
+
+                        <h3
+                            class="mb-3 font-titulos text-xl
+                                   font-bold text-violet-700"
+                        >
+                            Hotel Jirah
+                        </h3>
+
+                        <p class="mb-5 leading-7 text-texto">
+                            Desarrollo de una página web
+                            orientada a apoyar el ecosistema
+                            de reservas del Hotel Jirah.
+                            El proyecto buscaba facilitar
+                            la organización y gestión de
+                            los procesos relacionados
+                            con las reservas del hotel.
+                        </p>
+
+                        <ul
+                            class="mb-6 flex flex-wrap gap-2"
+                            aria-label="Tecnologías del Hotel Jirah"
+                        >
+
+                            <li class="rounded-full bg-lavanda
+                                       px-3 py-1 text-sm
+                                       font-semibold text-violet-800">
+                                Spring Boot
+                            </li>
+
+                            <li class="rounded-full bg-lavanda
+                                       px-3 py-1 text-sm
+                                       font-semibold text-violet-800">
+                                TypeScript
+                            </li>
+
+                            <li class="rounded-full bg-lavanda
+                                       px-3 py-1 text-sm
+                                       font-semibold text-violet-800">
+                                JavaScript
+                            </li>
+
+                            <li class="rounded-full bg-lavanda
+                                       px-3 py-1 text-sm
+                                       font-semibold text-violet-800">
+                                MySQL
+                            </li>
+
+                        </ul>
+
+                        <div class="mt-auto">
+
+                            <p
+                                class="inline-block rounded-lg
+                                       bg-emerald-100 px-5 py-3
+                                       font-semibold text-emerald-800"
+                            >
+                                Proyecto finalizado
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- FORMACIÓN ACADÉMICA -->
+        <section
+            id="formacion"
+            class="px-6 py-16 md:px-12"
+        >
+
+            <h2
+                class="mb-4 text-center font-titulos
+                       text-3xl font-bold text-fondo-oscuro"
+            >
+                Mi formación académica
+            </h2>
+
+            <p
+                class="mx-auto mb-12 max-w-2xl
+                       text-center text-texto"
+            >
+                Mi aprendizaje combina la formación
+                universitaria con la práctica constante
+                en desarrollo de software.
+            </p>
+
+            <!-- LÍNEA DE TIEMPO -->
+            <ol class="mx-auto max-w-4xl">
+
+                <!-- FORMACIÓN UNIVERSITARIA -->
+                <li
+                    class="relative ml-4 border-l-4
+                           border-violet-200 pb-10 pl-8"
+                >
+
+                    <span
+                        aria-hidden="true"
+                        class="absolute -left-[14px] top-1
+                               flex h-6 w-6 items-center
+                               justify-center rounded-full
+                               bg-morado ring-4 ring-fondo-claro"
+                    ></span>
+
+                    <article
+                        class="rounded-2xl border border-violet-200
+                               bg-white p-7 shadow-md
+                               transition duration-300
+                               hover:shadow-xl
+                               motion-reduce:transition-none"
+                    >
+
+                        <p
+                            class="mb-5 text-sm font-semibold
+                                   uppercase tracking-wide
+                                   text-violet-700"
+                        >
+                            Formación universitaria
+                        </p>
+
+                        <!-- INGENIERÍA -->
+                        <div class="mb-6">
+
+                            <h3
+                                class="mb-2 font-titulos
+                                       text-xl font-bold
+                                       text-fondo-oscuro"
+                            >
+                                Ingeniería de Software
+                            </h3>
+
+                            <p
+                                class="mb-3 font-semibold
+                                       text-violet-700"
+                            >
+                                Tecnológico de Antioquia
+                            </p>
+
+                            <p class="mb-4 leading-8 text-texto">
+                                Formación enfocada en el análisis,
+                                diseño y desarrollo de aplicaciones,
+                                bases de datos y gestión de proyectos
+                                de software.
+                            </p>
+
+                            <span
+                                class="inline-block rounded-full
+                                       bg-lavanda px-4 py-2
+                                       text-sm font-semibold
+                                       text-violet-800"
+                            >
+                                TERMINADA EN EL 2026
+                            </span>
+
+                        </div>
+
+                        <hr class="my-6 border-violet-200">
+
+                        <!-- TECNOLOGÍA -->
+                        <div>
+
+                            <h3
+                                class="mb-2 font-titulos
+                                       text-xl font-bold
+                                       text-fondo-oscuro"
+                            >
+                                Tecnología en Gestión Informática
+                            </h3>
+
+                            <p
+                                class="mb-3 font-semibold
+                                       text-violet-700"
+                            >
+                                Tecnológico de Antioquia
+                            </p>
+
+                            <p class="leading-8 text-texto">
+                                Formación en fundamentos de
+                                programación, gestión de sistemas
+                                de información, bases de datos
+                                y herramientas tecnológicas.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </li>
+
+                <!-- RIWI -->
+                <li
+                    class="relative ml-4 border-l-4
+                           border-transparent pl-8"
+                >
+
+                    <span
+                        aria-hidden="true"
+                        class="absolute -left-[14px] top-1
+                               flex h-6 w-6 items-center
+                               justify-center rounded-full
+                               bg-morado ring-4 ring-fondo-claro"
+                    ></span>
+
+                    <article
+                        class="rounded-2xl border border-violet-200
+                               bg-white p-7 shadow-md
+                               transition duration-300
+                               hover:shadow-xl
+                               motion-reduce:transition-none"
+                    >
+
+                        <p
+                            class="mb-2 text-sm font-semibold
+                                   uppercase tracking-wide
+                                   text-violet-700"
+                        >
+                            Formación práctica
+                        </p>
+
+                        <h3
+                            class="mb-2 font-titulos
+                                   text-xl font-bold
+                                   text-fondo-oscuro"
+                        >
+                            Desarrollo de Software
+                        </h3>
+
+                        <p
+                            class="mb-4 font-semibold
+                                   text-violet-700"
+                        >
+                            RIWI — Bootcamp de programación
+                        </p>
+
+                        <p class="mb-5 leading-8 text-texto">
+                            Formación intensiva orientada al
+                            aprendizaje práctico de programación,
+                            desarrollo web, control de versiones,
+                            trabajo colaborativo y construcción
+                            de proyectos.
+                        </p>
+
+
+                    </article>
+
+                </li>
+
+            </ol>
+
+        </section>
+
+        <!-- CONTACTO -->
+        <section
+            id="contacto"
+            class="mx-4 mb-10 rounded-3xl
+                   bg-lavanda px-6 py-14
+                   text-center md:mx-8 md:px-12"
+        >
+
+            <h2
+                class="mb-5 font-titulos
+                       text-3xl font-bold"
+            >
+                ¿Trabajamos juntos?
+            </h2>
+
+            <p
+                class="mx-auto mb-7 max-w-2xl
+                       leading-8 text-texto"
+            >
+                Me interesa continuar aprendiendo,
+                participar en nuevos proyectos
+                y aportar mis conocimientos para
+                desarrollar soluciones tecnológicas
+                que ayuden a las personas.
+            </p>
+
+            <a
+                href="https://github.com/Dahiana21"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block rounded-xl
+                       bg-morado px-6 py-3
+                       font-semibold text-white
+                       transition duration-200
+                       hover:bg-violet-700
+                       focus-visible:outline
+                       focus-visible:outline-2
+                       focus-visible:outline-offset-4
+                       focus-visible:outline-violet-700"
+            >
+                Visitar mi GitHub
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer
+        class="bg-fondo-oscuro px-6 py-8
+               text-center text-white"
+    >
+        <p>© 2026 Dahiana Dev. Portafolio personal.</p>
+    </footer>
+
+</body>
+</html>
